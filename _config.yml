@@ -1,0 +1,33 @@
+title: Cheatsheets
+description: Personal interview prep notes by bythebug
+url: "https://bythebug.github.io"
+baseurl: "/cheatsheets"
+author: bythebug
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "sheets"
+    values:
+      layout: "sheet"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - source.html
+  - "*.html.bak"
+  - index.html
+  - dsa-faang-cheatsheet.html

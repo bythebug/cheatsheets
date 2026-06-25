@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }} — {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="brand" href="{{ '/' | relative_url }}">Cheatsheets</a>
+  <a class="gh" href="https://github.com/bythebug" target="_blank">github.com/bythebug</a>
+</nav>
+
+<div class="page-wrap">
+
+  <aside class="sidebar">
+    <div class="toc-label">Contents</div>
+    {{ page.toc | markdownify }}
+  </aside>
+
+  <main class="sheet-content">
+    <div class="sheet-header">
+      <h1>{{ page.title }}</h1>
+      <div class="meta">{{ page.description }}</div>
+    </div>
+    {{ content }}
+  </main>
+
+</div>
+
+<footer class="site-footer">
+  Personal prep notes &nbsp;·&nbsp;
+  <a href="https://github.com/bythebug" target="_blank">github.com/bythebug</a>
+</footer>
+
+</body>
+</html>

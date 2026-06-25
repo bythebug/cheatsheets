@@ -6,8 +6,25 @@ Personal notes I made for my own interview prep.
 
 ## Sheets
 
-| Sheet | Description |
-|-------|-------------|
-| [DSA Cheat Sheet](dsa-faang-cheatsheet.html) | Data structures & algorithms — patterns, templates, complexity |
+| Sheet | File |
+|-------|------|
+| DSA Cheat Sheet | `sheets/dsa.md` |
 
-More coming.
+## Adding a new sheet
+
+1. Create `sheets/your-topic.md`
+2. Add frontmatter at the top:
+
+```yaml
+---
+layout: sheet
+title: Your Topic
+description: One-line description
+---
+```
+
+3. Write content in Markdown — code blocks, tables, callouts all work
+4. Add a link in `index.md`
+5. `git add . && git commit -m "add X sheet" && git push`
+
+GitHub Pages builds and deploys automatically.
