@@ -9,7 +9,7 @@ title: Cheatsheets
 
   <div class="sheet-label">All sheets</div>
   <div class="sheet-list">
-    <a class="sheet-item" href="{{ '/sheets/dsa' | relative_url }}">
+    <a class="sheet-item" href="{{ '/dsa-faang-cheatsheet.html' | relative_url }}">
       <span class="name">DSA Cheat Sheet</span>
       <span class="desc">Revise your DSA here</span>
     </a>
